@@ -16,7 +16,8 @@ const documentResultSchema = new mongoose.Schema({
       {
         pageLocation: String,
         pageOrder: Number,
-        documentGuid: String,
+        documentLocation: String,
+        documentOrder: Number,
         text: String
       }
     ],

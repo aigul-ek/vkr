@@ -46,3 +46,8 @@ cleanup:
 run:
 	@echo "${YELLOW}Running index.js from Node container:Dev...${NC}\n"
 	@docker compose -f dev.docker-compose.yml exec node npm run start
+
+.PHONY: create
+create:
+	@echo "${YELLOW}Creating test search from create-search.js from Node container:Dev...${NC}\n"
+	@docker compose -f dev.docker-compose.yml exec node npm run create
